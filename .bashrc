@@ -110,19 +110,5 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 alias ll='ls -al --color'
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/bglaze/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/bglaze/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/bglaze/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/bglaze/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+alias la='ls -altr --color'
 
