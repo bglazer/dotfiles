@@ -19,3 +19,6 @@ set autoindent
 set number
 
 noremap <F4> :set hlsearch! hlsearch?<CR>
+noremap * :/<C-R><C-W>
+
+noremap <F7> :set number! nonumber?<CR>
