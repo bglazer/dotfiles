@@ -24,3 +24,5 @@ noremap * :/<C-R><C-W>
 noremap <F7> :set number! nonumber?<CR>
 
 colorscheme desert
+hi Search ctermbg=LightYellow
+hi Search ctermfg=darkgrey
