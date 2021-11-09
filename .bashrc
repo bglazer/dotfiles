@@ -14,8 +14,11 @@ HISTIGNORE='ls:bg:fg:history:fg 1:fg 2:ll'
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=100000
+HISTTIMEFORMAT="%h %d %H:%M:%S "
+# Immediately save command to history file, rather than when exiting a session
+PROMPT_COMMAND='$PROMPT_COMMAND; history -a'
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -111,4 +114,3 @@ fi
 
 alias ll='ls -al --color'
 alias la='ls -altr --color'
-
